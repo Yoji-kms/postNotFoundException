@@ -18,6 +18,7 @@ object WallService {
         }
 
         if (post != null) {
+            comments = post.comments?.comments ?: emptyArray()
             comments += comment
             update(post.copy(comments = Comments(comments = comments)))
         }
