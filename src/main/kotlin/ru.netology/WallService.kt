@@ -9,18 +9,19 @@ object WallService {
         comments = emptyArray()
     }
 
-    fun createComment(comment: Comment, postId: Int) {
+    fun createComment(comment: Comment, postId: Int): Boolean {
         val post:Post? = try {
             findPostById(postId)
         }catch (e:PostNotFoundException){
             e.printStackTrace()
-            null
+            return false
         }
 
         if (post != null) {
             comments += comment
             update(post.copy(comments = Comments(comments = comments)))
         }
+        return true
     }
 
     private fun findPostById(postId: Int): Post?{
