@@ -48,19 +48,4 @@ class MainKtTest {
 
         assertFalse(updated)
     }
-
-    @Test
-    fun main_equalPosts() {
-        val post = Post()
-        val clonePost = post.copy()
-
-        assertEquals(post, clonePost)
-    }
-
-    @Test
-    fun main_hashPost() {
-        val hash = Post().hashCode()
-
-        assertNotEquals(0, hash)
-    }
 }
