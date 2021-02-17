@@ -1,4 +1,4 @@
-## Нетология. Разработка приложений на Kotlin. Урок 5 (Исключения). Задача 1. PostNotFoundException
+## Нетология. Разработка приложений на Kotlin. Урок 7 (Исключения). Задача 1. PostNotFoundException
 
 ### [Задание](https://github.com/netology-code/kt-homeworks/tree/master/07_exceptions):
 
